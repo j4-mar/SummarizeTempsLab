@@ -14,7 +14,9 @@ namespace SummarizeTempsLab
             if (File.Exists(fileName))
             {
                 Console.WriteLine("File Exists");
+
                 Console.WriteLine("Enter threshold");
+
                 string input;
                 int threshold;
                 input = Console.ReadLine();
@@ -56,8 +58,11 @@ namespace SummarizeTempsLab
 
                 }
                 Console.WriteLine("temperatures above = " + numAbove);
+
                 Console.WriteLine("temperatures below = " + numBelow);
+
                 int average = sumTemps / tempCount;
+
                 Console.WriteLine("Average temp = " + average);
             }
             else
